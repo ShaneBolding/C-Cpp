@@ -1,14 +1,177 @@
+
 <!DOCTYPE html>
-
 <html>
+<head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body {
+  background-color: Lavender;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: DodgerBlue;
+  color: black;
+  padding: 20px;
+  text-align: center;
+font-size: 25px;
+} 
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: auto; /* only for demonstration, should be removed */
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 1550px) {
+  
+  article{
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+</style>
+</head>
 <body>
+<header>
+	<p><h1 id="myHeader">Coding</h1></p>
+</header>
 
-<h1>Coding C-Cpp</h1>
+<section>
 
-<p>I'm Hosted with no love :( </p>
+<article>
 
-<body bgcolor = "AliceBlue">
+<p style = "font-size: 18px;">
+	This section is based on all the coding that I have learned through university. As mentioned
+	before on the main page my coding knowledge consists of HTML, C, C++, Java, Javascript, Assembly, and MatLab.
+	With my most comfortable languages being C and C++ with Java and MatLab coming in a close second.
+</p>
+
+<p style = "font-weight: bold; font-size: 18px;">  
+	  What's on This Page
+</p>
+
+<ul style = "font-size: 18px;">
+	<li>Monte Carlo Simulation(C)</li>
+	<li>Hashtables(C)</li>
+	<li>Semophores/Threading(C++)</li>
+	<li>Pattern Recognition(MatLab)</li>
+	<li>Microprocessors(HC11/Assembly)</li>
+</ul>
+
+</article>
+<article>
+
+<! MONTE CARLO SIMULATION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
+<p style = "font-weight: bold; font-size: 18px;">
+Monte Carlo Simulation
+</p>
+
+<p style = "font-size: 18px;"><img src="MonteCarloSimulation.PNG" alt="Open Box" style="float:left;width:25%;height:25%;padding: 10px;max-height:400px;min-height:250px;min-width:250px">
+To the left is a program that I made that simulates the Monte Carlo algorithm which is a computer algorithm that determines
+the sampling rate that is needed for a batch of items to catch a certain percentage of bad batches. This is/can be used
+in an industrial setting such as assembly lines. This specific program has inputed a set percentage of things to be wrong and
+then makes random items in bad batches. Then it samples all the batches to see if it can find a bad batch.
+</p> 
+
+</article>
+<article>
+
+<! HASHTABLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
+<p style = "font-weight: bold; font-size: 18px;">
+Hashtables
+</p>
+
+<p style = "font-size: 18px;"><img src="Hashtable.PNG" alt="hashtable" style="float:left;width:25%;height:25%;padding: 10px;max-height:200px">
+This is the results of a program I made that took 80000+ usernames and passwords and encrypted
+them. It then when given a username went through the hastable and pulled the encrypted password
+that was stored to test if the programmed worked.
+</p> 
+
+</article>
+<article>
+
+<! Semophores/Threading ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
+<p style = "font-weight: bold; font-size: 18px;">
+Semophores/Threading
+</p>
+
+
+<p style = "font-size: 18px;">
+I have wrote multiple programs that utilized semophores to prevent race conditions when performing
+multi-threaded actions and commands. I have no picture showing this because what I did program was just
+multiple test programs that don't really give understandable screenshots.
+</p> 
+
+</article>
+<article>
+
+<! PARTTERN RECOGNITION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
+<p style = "font-weight: bold; font-size: 18px;">
+Pattern Recognition
+</p>
+
+<p style = "font-size: 18px;"><img src="findingBestSolution.PNG" alt="AI" style="float:left;width:25%;height:25%;padding: 10px;max-height:200px">
+I created a program that tested a neural network with multiple different training scenarios and compared the output to determine
+the best training scenario. This program was used to differentiate between 5 different fish using a training file of multiple pictures
+of the 5 different fish. As you can see on the left I created a neural network with 97% accuracy in 33.82 seconds. 
+</p> 
+
+</article>
+<article>
+
+<! MICROPROCESSORS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
+<p style = "font-weight: bold; font-size: 18px;">
+Microprocessors
+</p>
+
+<p style = "font-size: 18px;"><img src="MicroPEdit.PNG" alt="assembly" style="float:left;width:25%;height:25%;padding: 10px;max-height:400px;min-height:300px;min-width:300px">
+I am familiarized with microprocessers like the HC11 and the assemble code that was needed to program the board. I programmed code that handled
+input, output, trigger interrupts, timer interrupts, and most other things needed for an imbedded system. The program to the left looked at 
+an array of numbers and determined how many numbers were positive, negative, even, and odd. I used this picture because it seemed easiest to
+demonstrate without the physical board shown.
+</p> 
+
+</article>
+  
+</section>
+
+<footer>
+
+<p style = "text-align:center; font-weight: bold;">Contact me through E-mail: Shane.B.Engineer@gmail.com	or through phone: 770-680-9557 </p>
+
+</footer>
+
+
 </body>
-
 </html>
+
