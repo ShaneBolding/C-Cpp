@@ -1,0 +1,65 @@
+  ADDR B1 B2 B3 B4 C:\Users\Scumb\Desktop\Du Hast\MicroProcessor    PAGE       1
+
+                   *Program SHB&
+                   *Multiplies 3byte by a 1byte
+                   *Declares variables
+                           ORG     $00
+                   M       RMB 3
+                   N       RMB 1
+                   P       RMB 4
+                   P1      RMB 2
+                   P2      RMB 2
+                   P3      RMB 2
+                   *load A and B with LSB of both Multiplicand and Multiplier
+  000E 96 02               LDAA    $02
+  0010 D6 03               LDAB    $03
+                   *Multiplies A and B and stores in D
+  0012 3D                  MUL
+                   *Store B into LSB of Product
+  0013 D7 07               STAB    $07
+                   *Store A into MSB of P1
+  0015 97 08               STAA    P1
+                   *load the middle byte of Multiplicand to A
+  0017 96 01               LDAA    $01
+                   *load multiplier into B
+  0019 D6 03               LDAB    $03
+                   *Multiply A and B and store into D
+  001B 3D                  MUL
+                   *Store D into P2
+  001C DD 0A               STD     P2
+                   *Read MSB of Multiplicand to A
+  001E 96 00               LDAA    $00
+                   *Multiplier to B
+  0020 D6 03               LDAB    $03
+                   *multiply and store into P3
+  0022 3D                  MUL
+  0023 DD 0C               STD     P3
+                   *Load MSB of P1 into A
+  0025 96 08               LDAA    P1
+                   *Load LSB of P2 into B
+  0027 D6 0B               LDAB    P2+1
+                   *Add A and B into mid byte low of product
+  0029 1B                  ABA
+  002A 97 06               STAA    $06
+                   *Put MSB of P2 into A
+  002C 96 0A               LDAA    P2
+                   *Add with carry P3 LSB with A
+  002E 99 0D               ADCA    P3+1
+                   *Store sum into mid byte high of product
+  0030 97 05               STAA    $05
+                   *P3 MSB to A
+  0032 96 0C               LDAA    P3
+                   *Add w/ carry zero
+  0034 99 00               ADCA    0
+                   *Store sum to product MSB
+  0036 97 04               STAA    $04
+
+
+  Symbol Table 
+
+  M                  0000
+  N                  0003
+  P                  0004
+  P1                 0008
+  P2                 000A
+  P3                 000C

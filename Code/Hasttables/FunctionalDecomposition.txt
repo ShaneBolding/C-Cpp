@@ -1,0 +1,63 @@
+Shane Bolding
+Data Structures and Algorithms II
+Project 1
+Functional Decomposition
+
+Defined structs used
+
+typedef struct keyValuePair 
+{
+	
+	char name[50];
+	
+	char password[50];
+	
+	KVP next;
+
+}
+
+Files and Functions in the Program
+
+dictionary.c
+
+/*function generates hashtable*/
+void genHashTable();
+
+/*creates nodes and inserts them into the hashtable (called by genHashTable)*/
+void insert(char name[], char password[]);
+
+/*generates the hash index number*/
+int hash(char name[]);
+
+/*finds the node with the name given and returns the password*/
+char* findPassword(char name[]);
+/*prints out hashtable to troubleshoot the hashtables existance (not needed to run program)*/
+void showTable(void);
+/*creates the array of pointers used by the hashtable*/
+void createArray();
+
+file.c
+
+/*generates the rawData.txt file*/
+void genRawData(void);
+
+/*generates the encrptedData.txt file*/
+void genEncryptedData(void);
+
+/*prints strings to a file name given by parameters*/
+void printFile(char userIds[],char fileName[]);
+
+/*changes all name values to lower case*/
+char* lwrCase(char a[]);
+
+/prints the 6 lines of information comparing rawData.dat and the created hashtable*/
+void checkPasswords(void);
+
+
+password.c
+
+/*generates the "random" passwords*/
+char* generatePassword(char a[]);
+
+/*encryptes the password given in parameter*/
+char* encryption(char key[],char password[]);

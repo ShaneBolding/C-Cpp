@@ -1,0 +1,48 @@
+  ADDR B1 B2 B3 B4 C:\Users\Scumb\Desktop\Du Hast\MicroProcessor    PAGE       1
+
+                   *Program SHB7
+                   *Checks Array of N bytes to see if entries are +, -, even, or
+.                  odd
+                   *Declares flag counters
+                           ORG     $00
+                   Ne      RMB 1
+                   P       RMB 1
+                   E       RMB 1
+                   O       RMB 1
+                   *Declares Array
+                           ORG     $100
+                   N       equ     5
+  0100 05          array   fcb     N
+                   *Start program
+                           ORG     $B600
+  B600 CE 01 00            ldx     #array
+  B603 1F 00 01 05 Odd     brclr   0,X,$01,Even
+  B607 7C 00 03            inc     O
+  B60A 20 03               bra     Pos
+  B60C 7C 00 02    Even    inc     E
+  B60F 1F 00 00 05 Pos     brclr   0,X,$00,Neg
+  B613 7C 00 01            inc     P
+  B616 20 03               bra     chkend
+  B618 7C 00 00    Neg     inc     Ne
+  B61B 8C 01 04    chkend  cpx     #array+N-1
+  B61E 24 03               bhs     exit
+  B620 08                  inx
+  B621 20 E0               bra     Odd
+                   *End Program
+  B623 3F          exit    swi
+
+
+  Symbol Table 
+
+  CHKEND             B61B
+  NEG                B618
+  EXIT               B623
+  E                  0002
+  EVEN               B60C
+  N                  0005
+  O                  0003
+  P                  0001
+  POS                B60F
+  ODD                B603
+  NE                 0000
+  ARRAY              0100
