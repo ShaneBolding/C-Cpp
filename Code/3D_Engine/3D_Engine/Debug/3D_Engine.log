@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (3D_Engine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  3D_Engine.cpp
+C:\Users\Harris\Desktop\C Coding\3D_Engine\3D_Engine\3D_Engine.cpp(172,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Harris\Desktop\C Coding\3D_Engine\3D_Engine\3D_Engine.cpp(172,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Harris\Desktop\C Coding\3D_Engine\3D_Engine\3D_Engine.cpp(171,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Harris\Desktop\C Coding\3D_Engine\3D_Engine\3D_Engine.cpp(171,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Harris\Desktop\C Coding\3D_Engine\3D_Engine\3D_Engine.cpp(170,64): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Harris\Desktop\C Coding\3D_Engine\3D_Engine\3D_Engine.cpp(170,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  3D_Engine.vcxproj -> C:\Users\Harris\Desktop\C Coding\3D_Engine\Debug\3D_Engine_pt1.exe
