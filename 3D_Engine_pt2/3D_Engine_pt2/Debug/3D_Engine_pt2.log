@@ -1,8 +1,0 @@
-﻿  Engine3D_pt2.cpp
-C:\Users\Harris\Desktop\C Coding\3D_Engine_pt2\3D_Engine_pt2\Engine3D_pt2.cpp(310,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Harris\Desktop\C Coding\3D_Engine_pt2\3D_Engine_pt2\Engine3D_pt2.cpp(310,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Harris\Desktop\C Coding\3D_Engine_pt2\3D_Engine_pt2\Engine3D_pt2.cpp(309,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Harris\Desktop\C Coding\3D_Engine_pt2\3D_Engine_pt2\Engine3D_pt2.cpp(309,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Harris\Desktop\C Coding\3D_Engine_pt2\3D_Engine_pt2\Engine3D_pt2.cpp(308,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Harris\Desktop\C Coding\3D_Engine_pt2\3D_Engine_pt2\Engine3D_pt2.cpp(308,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  3D_Engine_pt2.vcxproj -> C:\Users\Harris\Desktop\C Coding\3D_Engine_pt2\Debug\3D_Engine_pt2.exe

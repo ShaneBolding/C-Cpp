@@ -1,0 +1,7 @@
+﻿  main.cpp
+C:\Users\Harris\Desktop\C Coding\ConsoleFPS\ConsoleFPS\main.cpp(17,26): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Harris\Desktop\C Coding\ConsoleFPS\ConsoleFPS\main.cpp(72,46): warning C4244: 'argument': conversion from 'float' to 'const unsigned int', possible loss of data
+C:\Users\Harris\Desktop\C Coding\ConsoleFPS\ConsoleFPS\main.cpp(83,46): warning C4244: 'argument': conversion from 'float' to 'const unsigned int', possible loss of data
+C:\Users\Harris\Desktop\C Coding\ConsoleFPS\ConsoleFPS\main.cpp(135,44): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Harris\Desktop\C Coding\ConsoleFPS\ConsoleFPS\main.cpp(143,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  ConsoleFPS.vcxproj -> C:\Users\Harris\Desktop\C Coding\ConsoleFPS\Debug\ConsoleFPS.exe
